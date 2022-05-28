@@ -1,0 +1,78 @@
+
+.title_background{
+    background-image: url(../img/dep/angel-balashev-REtTwQPjTmE-unsplash\ 3.png);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+.title{
+    padding-left: 15%;
+}
+#info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.info_txt{
+    font-size: 1.3rem;
+    width: 20%;
+    text-align: center;
+    font-family: var(--lobster-font-family);
+}
+.info_img img{
+    height: 462px;
+    padding: 2rem 2rem 2rem 2rem;
+}
+#inspirational_quote{
+    font-family: var(--lobster-font-family);
+    font-size: 4.8rem;
+    display: flex;
+    justify-content: center;
+    background-color: var(--dark-color);
+}
+.iconify{
+    font-size: 1.2rem;
+    padding-right: .3rem;
+}
+.helpline_border{
+    border-right: solid white .3rem;
+}
+
+#helpline_with_img{
+    display: flex;
+    height: 471px;
+    text-align: center;
+    justify-content: space-evenly;
+    background-color: var(--dark-color);
+}
+.helpline_img{
+    display: flex;
+    align-items: center;
+}
+#helpline_with_img img{
+    height: 390px;
+    border-radius: 39px;
+}
+
+@media only screen and (max-width: 600px){
+    #info{
+        flex-direction: column;
+    }
+    .info_txt{
+        width: 90%;
+        padding-bottom: 2rem;
+    }
+    #inspirational_quote{
+        font-size: 1.8rem;
+    }
+    .helpline_img{
+        display: none;
+    }
+    .helpline_border{
+        border-right: none;
+    }
+}

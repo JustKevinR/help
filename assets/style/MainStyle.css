@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --highlight-txt-color: rgba(0, 255, 209, 1); 
+    --dark-color: rgba(16, 16, 16, 1); 
+    --light-color: rgba(25, 25, 25, 1); 
+    --lobster-font-family: 'Lobster', cursive;
+    --shadows-into-light-font-family: 'Shadows Into Light', cursive;
+    --inter-font-family: 'Inter', sans-serif;
+}
+.highlight{
+    color: var(--highlight-txt-color);
+}
+a:link {
+    text-decoration: none;
+  }
+.title{
+    color: white;
+    font-size: 4rem;
+    font-family: var(--shadows-into-light-font-family);
+}
+
+#helplines_section{
+    display: flex;
+    background-image: linear-gradient(0deg, rgba(37, 8, 25, 0.3), rgba(37, 8, 25, 0.3)),url(../img/dep/wesley-hilario-h4zmrU0a914-unsplash\ 1.png);
+    background-size: cover;
+    background-position: center;
+    height: 491px;
+    
+}
+.helpline{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.helpline_title{
+    font-size: 2rem;
+    font-family: var(--inter-font-family);
+}
+.helpline_info{
+    width: 80%;
+    text-align: center;
+    font-size: 1rem;
+    font-family: var(--inter-font-family);
+}
+
+.helpline_contacts{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+    font-family: var(--inter-font-family);
+    font-size: 1rem;
+}
+
+.helpline_contacts, a{
+    color: var( --highlight-txt-color) !important;
+}
+.site_link, .phone_number{
+    display: flex;
+    align-items: center;
+}
+@media only screen and (max-width: 600px){
+    #helplines_section{
+        flex-direction: column;
+        height: 100vh;
+    }
+    .helpline{
+        margin-top: 5rem;
+    }
+}

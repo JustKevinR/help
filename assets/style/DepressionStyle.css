@@ -3,7 +3,6 @@ body{
 }
 .title_background{
     background-image: url(../img/dep/angel-balashev-REtTwQPjTmE-unsplash\ 3.png);
-    width: 100%;
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -28,7 +27,7 @@ body{
 }
 .info_img img{
     height: 462px;
-    padding: 2rem 2rem 2rem 2rem;
+    padding: 2rem 0rem 2rem 0rem;
 }
 #inspirational_quote{
     font-family: var(--lobster-font-family);

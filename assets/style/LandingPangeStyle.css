@@ -63,6 +63,7 @@
     .title{
         display: flex;
         padding-left: 1rem;
+        text-align: center;
     }
     .nav {
       flex-direction: column;

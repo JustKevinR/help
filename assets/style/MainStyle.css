@@ -17,7 +17,8 @@ body{
 .highlight{
     color: var(--highlight-txt-color);
 }
-a:link {
+a {
+    color: rgb(255, 255, 255);
     text-decoration: none;
   }
 .title{
@@ -60,8 +61,8 @@ a:link {
     font-size: 1rem;
 }
 
-.helpline_contacts, a{
-    color: var( --highlight-txt-color) !important;
+.site_link a,.site_link, .phone_number{
+    color: var( --highlight-txt-color);
 }
 .site_link, .phone_number{
     display: flex;

@@ -27,6 +27,7 @@ body{
 }
 .info_img img{
     height: 462px;
+    width: 100%;
     padding: 2rem 0rem 2rem 0rem;
 }
 #inspirational_quote{

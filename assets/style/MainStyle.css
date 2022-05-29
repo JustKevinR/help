@@ -5,6 +5,7 @@
 body{
     padding: 0;
     margin: 0;
+    color: white;
 }
 :root{
     --highlight-txt-color: rgba(0, 255, 209, 1); 
@@ -29,11 +30,11 @@ a {
 
 #helplines_section{
     display: flex;
-    background-image: linear-gradient(0deg, rgba(37, 8, 25, 0.3), rgba(37, 8, 25, 0.3)),url(../img/dep/wesley-hilario-h4zmrU0a914-unsplash\ 1.png);
     background-size: cover;
     background-position: center;
     height: 491px;
-    
+    text-align: center;
+    justify-content: space-evenly;
 }
 .helpline{
     display: flex;
@@ -72,6 +73,8 @@ a {
     #helplines_section{
         flex-direction: column;
         height: 100vh;
+        display: flex;
+        justify-content: space-around;
     }
     .helpline{
         margin-top: 5rem;

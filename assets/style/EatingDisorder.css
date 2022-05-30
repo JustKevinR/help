@@ -10,7 +10,6 @@
 .title{
     padding-left: 15%;
 }
-
 #info{
     display: flex;
     flex-direction: row;
@@ -41,29 +40,6 @@
     background-color: var(--dark-color);
 }
 
-#helplines_section{
-    background-color: var(--light-color);
-}
-
-.helpline_border{
-    border-right: solid white .3rem;
-}
-
-#helpline_with_img{
-    display: flex;
-    height: 471px;
-    text-align: center;
-    justify-content: space-evenly;
-    background-color: var(--dark-color);
-}
-.helpline_img{
-    display: flex;
-    align-items: center;
-}
-#helpline_with_img img{
-    height: 390px;
-    border-radius: 39px;
-}
 #helpful_links{
     display: flex;
     font-size: 3.3rem;
@@ -86,30 +62,19 @@
 }
 
 @media only screen and (max-width: 600px){
-    #helplines_section{
-        flex-direction: column;
-        height: 100vh;
-    }
-    .helpline{
-        margin-top: 5rem;
-    }
-    .helpline_img{
-        display: none;
-    }
     #info{
         flex-direction: column;
     }
     .info_txt{
         width: 90%;
         padding-bottom: 2rem;
+        padding-top: 2rem;
     }
     #inspirational_quote{
-        font-size: 1.8rem;
+        font-size: 2.5rem;
+        text-align: center;
     }
-    .helpline_img{
-        display: none;
-    }
-    .helpline_border{
-        border-right: none;
+    .info_img img{
+       display: none;
     }
 }

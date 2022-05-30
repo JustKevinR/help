@@ -37,39 +37,24 @@ body{
     justify-content: center;
     background-color: var(--dark-color);
 }
-.iconify{
-    font-size: 1.2rem;
-    padding-right: .3rem;
-}
+
 #helplines_section{
+    background-size: cover;
+    background-position: center;
     background-image: linear-gradient(0deg, rgba(37, 8, 25, 0.3), rgba(37, 8, 25, 0.3)),url(../img/dep/wesley-hilario-h4zmrU0a914-unsplash\ 1.png);
 }
 
-.helpline_border{
-    border-right: solid white .3rem;
-}
-
-#helpline_with_img{
-    display: flex;
-    height: 471px;
-    text-align: center;
-    justify-content: space-evenly;
-    background-color: var(--dark-color);
-}
-.helpline_img{
-    display: flex;
-    align-items: center;
-}
-#helpline_with_img img{
-    height: 390px;
-    border-radius: 39px;
-}
 
 #helpful_links{
     display: flex;
+    background-color: red;
     font-size: 3.3rem;
     font-family: var(--lobster-font-family);
 }
+#helpful_links a{
+    width: 50%;
+}
+
 .videos, .learn_more{
     background-size: cover;
     background-position: center;
@@ -123,5 +108,8 @@ body{
     }
     #helpful_links{
         flex-direction: column;
+    }
+    #helpful_links a{
+        width: 100%;
     }
 }

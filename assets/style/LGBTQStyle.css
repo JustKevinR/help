@@ -1,3 +1,10 @@
+p{
+    margin: 0%;
+}
+body{
+    background-image: url(../img/lgbtq/—Pngtree—purple\ smoke\ in\ dark\ background_1167620\ 3.png);
+    background-size: cover;
+}
 .title_background{
     background-image: url(../img/lgbtq/Main.png);
     width: 100%;
@@ -5,8 +12,90 @@
     background-size: cover;
     background-position: center;
     display: flex;
+    align-items: flex-end;
+}
+.titles{
+    width: 50%;
+    margin: 5rem;
+}
+.first_title{
+    font-size: 3.25rem;
+    font-family: var( --Anton-font-family);
+    color: #BFBEBE;
+}
+.second_title{
+    font-size: 4.85rem;
+    font-family: var(--lobster-font-family);
+    padding-bottom: 1rem;
+   
+}
+.third_title{
+    font-size: 1.25rem;
+    font-family: var( --Anton-font-family);
+    color: #BFBEBE;
+}
+
+#inspirational_quote{
+    font-family: var(--lobster-font-family);
+    font-size: 4.8rem;
+    padding: 4rem;
+    display: flex;
+    justify-content: center;
+    background-color: var(--dark-color);
+    margin-bottom: 2rem;
+}
+#second_inspirational_quote{
+    font-family: var(--lobster-font-family);
+    font-size: 2.8rem;
+    padding: 4rem;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
 }
-.title{
-    padding-left: 15%;
+
+#helpline_with_img{
+  background: rgba(0, 0, 0, 0.418);
+  border-radius: 25px;
+}
+
+.lgbtq_helpline_img{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+@media only screen and (max-width: 600px){
+    .titles{
+        width: 100%;
+        margin: 1rem;
+    }
+    .first_title{
+        font-size: 3.25rem;
+    }
+    .second_title{
+        font-size: 2.85rem;
+    }
+    #inspirational_quote{
+        font-size: 2rem;
+        padding: 2rem;
+        margin: 0rem;
+    }
+    .lgbtq_helpline_img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 1rem;
+    }
+    #helpline_with_img{
+        flex-direction: column;
+        margin: 0rem;
+        border-radius: 0px;
+      }
+      #second_inspirational_quote{
+        flex-direction: column;
+        text-align: center;
+    }
+    #second_inspirational_quote img{
+        margin-top: 4rem;
+    }
 }

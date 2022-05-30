@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 body{
     padding: 0;
@@ -14,6 +15,7 @@ body{
     --lobster-font-family: 'Lobster', cursive;
     --shadows-into-light-font-family: 'Shadows Into Light', cursive;
     --inter-font-family: 'Inter', sans-serif;
+    --Anton-font-family: 'Anton', sans-serif;
 }
 .highlight{
     color: var(--highlight-txt-color);
@@ -40,6 +42,7 @@ a {
     background-color: var(--light-color);
     display: flex;
     height: 351px;
+    justify-content: space-evenly;
 }
 
 .helpline{
@@ -101,7 +104,6 @@ a {
         display: flex;
     }
     .helpline{
-        margin-top: 5rem;
         width: 100%;
     }
     .helpline_img{
@@ -109,5 +111,11 @@ a {
     }
     .helpline_border{
         border-right: none;
+    }
+    .helpline_title{
+        margin-bottom: 1rem;
+    }
+    .helpline_contacts{
+        margin-top: 3rem;
     }
 }

@@ -10,3 +10,47 @@
 .title{
     padding-left: 15%;
 }
+#inspirational_quote{
+    font-family: var(--lobster-font-family);
+    font-size: 4.8rem;
+    display: flex;
+    justify-content: center;
+    background-color: var(--dark-color);
+}
+#info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: var(--light-color);
+}
+.info_txt{
+    font-size: 1.5rem;
+    width: 20%;
+    text-align: center;
+    font-family: var(--lobster-font-family);
+}
+.info_img img{
+    height: 462px;
+    width: 100%;
+    border-radius: 10%;
+    padding: 2rem 0rem 2rem 0rem;
+}
+
+@media only screen and (max-width: 600px){
+    #info{
+        flex-direction: column;
+    }
+    .info_txt{
+        width: 90%;
+        padding-bottom: 2rem;
+        padding-top: 2rem;
+    }
+    #inspirational_quote{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .info_img img{
+       display: none;
+    }
+}

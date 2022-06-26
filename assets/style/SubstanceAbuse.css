@@ -36,7 +36,16 @@
     border-radius: 10%;
     padding: 2rem 0rem 2rem 0rem;
 }
-
+.more-help a{
+    color: rgb(255, 255, 255);
+}
+.more-help{
+    background-color: var(--light-color);
+    flex: 0 0 100%;
+    text-align: center;
+    font-size: 2rem;
+    padding: 2rem 0 2rem 0;
+}
 @media only screen and (max-width: 600px){
     #info{
         flex-direction: column;

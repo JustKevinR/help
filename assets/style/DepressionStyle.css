@@ -85,11 +85,12 @@ body{
     border-bottom: .5rem solid white;
     border-left: .5rem solid white;
     border-right: .5rem solid white;
+    text-align: center;
 }
 
 
 @media only screen and (max-width: 600px){
-    
+
     #info{
         flex-direction: column;
     }

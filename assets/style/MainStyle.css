@@ -9,9 +9,9 @@ body{
     color: white;
 }
 :root{
-    --highlight-txt-color: rgba(0, 255, 209, 1); 
-    --dark-color: rgba(16, 16, 16, 1); 
-    --light-color: rgba(25, 25, 25, 1); 
+    --highlight-txt-color: rgba(0, 255, 209, 1);
+    --dark-color: rgba(16, 16, 16, 1);
+    --light-color: rgba(25, 25, 25, 1);
     --lobster-font-family: 'Lobster', cursive;
     --shadows-into-light-font-family: 'Shadows Into Light', cursive;
     --inter-font-family: 'Inter', sans-serif;
@@ -41,7 +41,7 @@ a {
 #helplines_section{
     background-color: var(--light-color);
     display: flex;
-    height: 351px;
+    /* height: 100%; */
     justify-content: space-evenly;
 }
 
@@ -71,8 +71,8 @@ a {
 }
 .helpline_contacts{
     display: flex;
-    justify-content: space-evenly; 
-    margin: 1rem;   
+    justify-content: space-evenly;
+    margin: 1rem;
 }
 .helpline_border{
     border-right: solid white .3rem;
@@ -100,7 +100,6 @@ a {
 @media only screen and (max-width: 600px){
     #helplines_section{
         flex-direction: column;
-        height: 100vh;
         display: flex;
     }
     .helpline{

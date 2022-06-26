@@ -42,25 +42,32 @@
 
 #helpful_links{
     display: flex;
+    background-color: red;
     font-size: 3.3rem;
     font-family: var(--lobster-font-family);
 }
-#helpful_links{
+#helpful_links a{
+    width: 50%;
+}
+
+.videos, .learn_more{
     background-size: cover;
     background-position: center;
     display: flex;
     align-items: center;
     border: solid white .5rem;
     padding: 1.6rem;
- 
+    height: 314px;
     text-align: center;
     justify-content: center;
 }
-#helpful_links{
-    background-image: linear-gradient(0deg, rgba(37, 8, 25, 0.719), rgba(37, 8, 25, 0.719)),url(../img/image\ 11.png);
+.videos{
+    background-image: linear-gradient(0deg, rgba(37, 8, 25, 0.3), rgba(37, 8, 25, 0.3)),url(../img/image\ 13.png);
 
 }
-
+.learn_more{
+    background-image: linear-gradient(0deg, rgba(37, 8, 25, 0.3), rgba(37, 8, 25, 0.3)),url(../img/image\ 11.png);
+}
 @media only screen and (max-width: 600px){
     #info{
         flex-direction: column;
@@ -76,5 +83,11 @@
     }
     .info_img img{
        display: none;
+    }
+    #helpful_links{
+        flex-direction: column;
+    }
+    #helpful_links a{
+        width: 100%;
     }
 }

@@ -27,7 +27,7 @@ body{
     font-size: 4.85rem;
     font-family: var(--lobster-font-family);
     padding-bottom: 1rem;
-   
+
 }
 .third_title{
     font-size: 1.25rem;
@@ -43,6 +43,7 @@ body{
     justify-content: center;
     background-color: var(--dark-color);
     margin-bottom: 2rem;
+    text-align: center;
 }
 #second_inspirational_quote{
     font-family: var(--lobster-font-family);

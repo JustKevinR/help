@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+body{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+}
+:root{
+    --highlight-text-color: rgba(0, 255, 209, 1);
+    --dark-black: rgba(16, 16, 16, 1);
+    --light-black: rgba(25, 25, 25, 1);
+    --lobster-font: 'Lobster', cursive;
+    --shadows-into-light-font: 'Shadows Into Light', cursive;
+    --inter-font: 'Inter', sans-serif;
+    --Anton-font: 'Anton', sans-serif;
+}
+.highlight{
+    color: var(--highlight-text-color);
+}
+.landing-page{
+    background-color: var(--dark-black);
+}
+.landing-page-titel{
+    flex: 0 0 100%;
+    text-align: center;
+    font-family: var(--shadows-into-light-font);
+    color: white;
+    font-size: 1.5rem;
+}
+.landing-page-link{
+    background-color: var(--light-black);
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    border-radius: 23px;
+    color: wheat;
+    text-align: center;
+    font-family: var(--inter-font);
+    margin: 1rem;
+}
+.landing-page-link-icon{
+    font-size: 5rem;
+}
+.landing-page-link-container{
+    display: flex;
+    flex: 0 0 100;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.landing-page-emergency{
+    flex: 0 0 100%;
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.2rem;
+    font-family: var(--shadows-into-light-font);
+}
+.title{
+    color: white;
+    font-size: 4rem;
+    font-family: var(--shadows-into-light-font);
+}
+.title_background{
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+#inspirational_quote{
+    font-family: var(--lobster-font);
+    font-size: 2.8rem;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    background-color: var(--dark-black);
+}
+.issue_container{
+    flex:  0 0 100%;
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--light-black);
+    font-family: var(--inter-font);
+    padding: 1rem;
+    color: white;
+}
+.issue_container_img img{
+    max-width: 25rem;
+    text-align: center;
+    padding: 0 0 0 1rem;
+    border-radius: 25px;
+}
+.issue_container_text p{
+    text-align: center;
+}
+.help_contaner{
+    flex: 0 0 100%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: var(--dark-black);
+    color: white;
+}
+.symptoms_text ul li{
+    padding: .5rem 0 0 0;
+}
+.symptoms_title{
+    font-size: 1.5rem;
+    font-family: var(--inter-font);
+}
+#video{
+    display: flex;
+    background-color: var(--dark-black);
+    justify-content: center;
+}
+#helpful_links{
+    background-color: var(--dark-black);
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 2rem;
+    font-family: var(--inter-font);
+    padding: 2rem 0 2rem 0;
+}
+  /* Small screens */
+@media only screen and (max-width: 600px){
+    .landing-page-link-container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .issue_container{
+        flex-direction: column;
+    }
+    .issue_container_text{
+        width: 100%;
+    }
+    .issue_container_img{
+        display: none;
+    }
+    .help_contaner{
+        align-items: center;
+        flex-direction: column;
+    }
+    .bipolar_symptom{
+        width: 100%;
+        text-align: center;
+    }
+    #video iframe{
+        width: 100%;
+    }
+    #helpful_links{
+        flex-direction: column;
+        text-align: center;
+    }
+}
+/* Big screens */
+@media only screen and (min-width: 600px){
+    .issue_container_text{
+        width: 50%;
+    }
+    .bipolar_symptom{
+        width: 33.33%;
+    }
+    #video iframe{
+        width: 50%;
+    }
+}

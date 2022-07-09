@@ -9,6 +9,7 @@ body{
 }
 a{
     text-decoration: none;
+    color: var(--highlight-text-color);
 }
 :root{
     --highlight-text-color: rgba(0, 255, 209, 1);
@@ -122,14 +123,66 @@ a{
     display: flex;
     background-color: var(--dark-black);
     justify-content: center;
+    padding-bottom: 1rem;
 }
 #helpful_links{
-    background-color: var(--dark-black);
+    flex: 0 0 100%;
     display: flex;
-    justify-content: space-evenly;
+}
+.nearby, .learn{
+    text-align: center;
+    color: white;
+    font-family: var(--inter-font);
+    font-size: 2rem;
+    border: .5rem solid white;
+    padding: 2rem;
+    background-size: cover;
+    background-position: center;
+    flex: 0 0 100%;
+}
+
+.nearby{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ,  url(../img/find-help.png);
+}
+.learn{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)) ,   url(../img/learn-more.png);
+}
+#helplines_section{
+    background-color: var(--light-black);
+    flex: 0 0 100%;
+    display: flex;
+    text-align: center;
+    color: white;
+}
+.helpline_title{
+    height: 10%;
+    padding: 1rem;
     font-size: 2rem;
     font-family: var(--inter-font);
-    padding: 2rem 0 2rem 0;
+}
+.helpline_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 70%;
+    font-size: 1rem;
+    align-items: center;
+    font-family: var(--inter-font);
+}
+.helpline_contacts .iconify{
+   margin-right: .3rem;
+}
+.helpline_info_txt{
+    width: 70%;
+}
+.site_link, .phone_number {
+    display: flex;
+    align-items: center;
+}
+.helpline_contacts{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 5rem;
 }
   /* Small screens */
 @media only screen and (max-width: 600px){
@@ -154,6 +207,9 @@ a{
         width: 100%;
         text-align: center;
     }
+    .nearby, .learn{
+        border: none;
+    }
     #video iframe{
         width: 100%;
     }
@@ -161,16 +217,28 @@ a{
         flex-direction: column;
         text-align: center;
     }
+    #helplines_section{
+        flex-direction: column;
+    }
 }
 /* Big screens */
 @media only screen and (min-width: 600px){
     .issue_container_text{
         width: 50%;
     }
+    .nearby, .learn{
+        min-width:50%;
+    }
     .bipolar_symptom{
         width: 33.33%;
     }
     #video iframe{
+        width: 50%;
+    }
+    .helpline_border{
+        border-right: solid white .3rem;
+    }
+    #helpful_links a{
         width: 50%;
     }
 }
